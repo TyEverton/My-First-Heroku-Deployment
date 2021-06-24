@@ -3,17 +3,21 @@ const path = require('path')
 
 const app = express()
 
+
 app.get('/', function(req, res) {
   
   res.sendFile( path.join(__dirname, '../index.html') )
 
 })
 
-app.get('/', function(req, res) {
+// app.get('/', function(req, res) {
 
-  res.sendFile( path.join(__dirname, '../styles.css'))
-  
-})
+//   res.sendFile( path.join(__dirname, '../styles.css'))
+
+// })
+
+app.use(express.static(__dirname, '../styles.css'));
+
 
 const port = process.env.PORT || 4915
 

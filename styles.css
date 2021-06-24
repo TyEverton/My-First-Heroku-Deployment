@@ -2,13 +2,29 @@
   border-radius: 25px;
   height: 250px;
   width: 250px;
+  position: relative;
+  left: 43%;
+  top: 235px;
+}
+
+.profilePhoto:hover {
+  transform: scale(1.5)
 }
 
 .name {
   font-family:'Courier New', Courier, monospace;
   font-size: large;
+  position: relative;
 }
+
+.name:hover {
+ font-size: 60px;
+ position: relative;
+ 
+}
+
 
 body {
   background-color: rgb(0, 217, 255);
 }
+
