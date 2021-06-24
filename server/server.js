@@ -9,14 +9,11 @@ app.get('/', function(req, res) {
 
 })
 
-// app.get('/', function(req, res) {
+app.use('/', function(req, res) {
+  
+  express.static( path.join(__dirname, "/server/styles.css"))
 
-//   res.sendFile( path.join(__dirname, '../styles.css'))
-
-// })
-
-app.use(express.static(__dirname, "/server/styles.css"));
-
+})
 
 const port = process.env.PORT || 4915
 
