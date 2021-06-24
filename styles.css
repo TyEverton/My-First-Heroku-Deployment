@@ -3,3 +3,12 @@
   height: 250px;
   width: 250px;
 }
+
+.name {
+  font-family:'Courier New', Courier, monospace;
+  font-size: large;
+}
+
+body {
+  background-color: blue;
+}
